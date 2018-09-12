@@ -60,8 +60,6 @@ def find_cool(array)
   end
 end
 
-end
-
 def organize_schools(array)
   by_location = {}
     schools.each do |school, location_hash|
