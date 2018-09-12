@@ -62,6 +62,6 @@ end
 
 end
 
-# def organize_schools(array)
+def organize_schools(array)
 
-# def
+def
