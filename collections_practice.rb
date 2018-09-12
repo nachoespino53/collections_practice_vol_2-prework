@@ -45,8 +45,12 @@ def count_elements(array)
   array.group_by(&:itself).map{|k, v| k.merge(count: v.length)}
 end
 
-def merge_data(data_1, data_2)
-  data_1[0].values.map.with_index {|v, i| data_2[i].merge(v)}
+def merge_data(keys, data)
+  keys.each do |name_hash|
+    data.each do |hash|
+      name_hash.merge!(hash[name_hash[:first_name]])
+    end
+  end
 end
 
 def find_cool(array)
