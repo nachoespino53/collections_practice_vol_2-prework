@@ -54,9 +54,12 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-    array.select do |item| 
-    item.has_value?('cool')
+   array.select do |word|
+    if word.has_value?("cool")
+      word
   end
+end
+
 end
 
 # def organize_schools(array)
